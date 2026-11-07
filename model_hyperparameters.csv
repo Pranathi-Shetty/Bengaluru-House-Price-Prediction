@@ -1,0 +1,212 @@
+Model,Parameter,Value
+Gradient Boosting,memory,None
+Gradient Boosting,steps,"[('preprocessor', ColumnTransformer(transformers=[('numerical',
+                                 Pipeline(steps=[('imputer',
+                                                  SimpleImputer(strategy='median')),
+                                                 ('scaler', StandardScaler())]),
+                                 ['total_sqft_clean', 'bhk', 'bath',
+                                  'balcony']),
+                                ('categorical',
+                                 Pipeline(steps=[('imputer',
+                                                  SimpleImputer(strategy='most_frequent')),
+                                                 ('encoder',
+                                                  OneHotEncoder(handle_unknown='infrequent_if_exist',
+                                                                min_frequency=5))]),
+                                 ['area_type', 'location'])])), ('model', GradientBoostingRegressor(max_depth=5, max_features='log2', min_samples_leaf=4,
+                          min_samples_split=15, n_estimators=500,
+                          random_state=42, subsample=0.9))]"
+Gradient Boosting,transform_input,None
+Gradient Boosting,verbose,False
+Gradient Boosting,preprocessor,"ColumnTransformer(transformers=[('numerical',
+                                 Pipeline(steps=[('imputer',
+                                                  SimpleImputer(strategy='median')),
+                                                 ('scaler', StandardScaler())]),
+                                 ['total_sqft_clean', 'bhk', 'bath',
+                                  'balcony']),
+                                ('categorical',
+                                 Pipeline(steps=[('imputer',
+                                                  SimpleImputer(strategy='most_frequent')),
+                                                 ('encoder',
+                                                  OneHotEncoder(handle_unknown='infrequent_if_exist',
+                                                                min_frequency=5))]),
+                                 ['area_type', 'location'])])"
+Gradient Boosting,model,"GradientBoostingRegressor(max_depth=5, max_features='log2', min_samples_leaf=4,
+                          min_samples_split=15, n_estimators=500,
+                          random_state=42, subsample=0.9)"
+Gradient Boosting,preprocessor__force_int_remainder_cols,deprecated
+Gradient Boosting,preprocessor__n_jobs,None
+Gradient Boosting,preprocessor__remainder,drop
+Gradient Boosting,preprocessor__sparse_threshold,0.3
+Gradient Boosting,preprocessor__transformer_weights,None
+Gradient Boosting,preprocessor__transformers,"[('numerical', Pipeline(steps=[('imputer', SimpleImputer(strategy='median')),
+                ('scaler', StandardScaler())]), ['total_sqft_clean', 'bhk', 'bath', 'balcony']), ('categorical', Pipeline(steps=[('imputer', SimpleImputer(strategy='most_frequent')),
+                ('encoder',
+                 OneHotEncoder(handle_unknown='infrequent_if_exist',
+                               min_frequency=5))]), ['area_type', 'location'])]"
+Gradient Boosting,preprocessor__verbose,False
+Gradient Boosting,preprocessor__verbose_feature_names_out,True
+Gradient Boosting,preprocessor__numerical,"Pipeline(steps=[('imputer', SimpleImputer(strategy='median')),
+                ('scaler', StandardScaler())])"
+Gradient Boosting,preprocessor__categorical,"Pipeline(steps=[('imputer', SimpleImputer(strategy='most_frequent')),
+                ('encoder',
+                 OneHotEncoder(handle_unknown='infrequent_if_exist',
+                               min_frequency=5))])"
+Gradient Boosting,preprocessor__numerical__memory,None
+Gradient Boosting,preprocessor__numerical__steps,"[('imputer', SimpleImputer(strategy='median')), ('scaler', StandardScaler())]"
+Gradient Boosting,preprocessor__numerical__transform_input,None
+Gradient Boosting,preprocessor__numerical__verbose,False
+Gradient Boosting,preprocessor__numerical__imputer,SimpleImputer(strategy='median')
+Gradient Boosting,preprocessor__numerical__scaler,StandardScaler()
+Gradient Boosting,preprocessor__numerical__imputer__add_indicator,False
+Gradient Boosting,preprocessor__numerical__imputer__copy,True
+Gradient Boosting,preprocessor__numerical__imputer__fill_value,None
+Gradient Boosting,preprocessor__numerical__imputer__keep_empty_features,False
+Gradient Boosting,preprocessor__numerical__imputer__missing_values,nan
+Gradient Boosting,preprocessor__numerical__imputer__strategy,median
+Gradient Boosting,preprocessor__numerical__scaler__copy,True
+Gradient Boosting,preprocessor__numerical__scaler__with_mean,True
+Gradient Boosting,preprocessor__numerical__scaler__with_std,True
+Gradient Boosting,preprocessor__categorical__memory,None
+Gradient Boosting,preprocessor__categorical__steps,"[('imputer', SimpleImputer(strategy='most_frequent')), ('encoder', OneHotEncoder(handle_unknown='infrequent_if_exist', min_frequency=5))]"
+Gradient Boosting,preprocessor__categorical__transform_input,None
+Gradient Boosting,preprocessor__categorical__verbose,False
+Gradient Boosting,preprocessor__categorical__imputer,SimpleImputer(strategy='most_frequent')
+Gradient Boosting,preprocessor__categorical__encoder,"OneHotEncoder(handle_unknown='infrequent_if_exist', min_frequency=5)"
+Gradient Boosting,preprocessor__categorical__imputer__add_indicator,False
+Gradient Boosting,preprocessor__categorical__imputer__copy,True
+Gradient Boosting,preprocessor__categorical__imputer__fill_value,None
+Gradient Boosting,preprocessor__categorical__imputer__keep_empty_features,False
+Gradient Boosting,preprocessor__categorical__imputer__missing_values,nan
+Gradient Boosting,preprocessor__categorical__imputer__strategy,most_frequent
+Gradient Boosting,preprocessor__categorical__encoder__categories,auto
+Gradient Boosting,preprocessor__categorical__encoder__drop,None
+Gradient Boosting,preprocessor__categorical__encoder__dtype,<class 'numpy.float64'>
+Gradient Boosting,preprocessor__categorical__encoder__feature_name_combiner,concat
+Gradient Boosting,preprocessor__categorical__encoder__handle_unknown,infrequent_if_exist
+Gradient Boosting,preprocessor__categorical__encoder__max_categories,None
+Gradient Boosting,preprocessor__categorical__encoder__min_frequency,5
+Gradient Boosting,preprocessor__categorical__encoder__sparse_output,True
+Gradient Boosting,model__alpha,0.9
+Gradient Boosting,model__ccp_alpha,0.0
+Gradient Boosting,model__criterion,friedman_mse
+Gradient Boosting,model__init,None
+Gradient Boosting,model__learning_rate,0.1
+Gradient Boosting,model__loss,squared_error
+Gradient Boosting,model__max_depth,5
+Gradient Boosting,model__max_features,log2
+Gradient Boosting,model__max_leaf_nodes,None
+Gradient Boosting,model__min_impurity_decrease,0.0
+Gradient Boosting,model__min_samples_leaf,4
+Gradient Boosting,model__min_samples_split,15
+Gradient Boosting,model__min_weight_fraction_leaf,0.0
+Gradient Boosting,model__n_estimators,500
+Gradient Boosting,model__n_iter_no_change,None
+Gradient Boosting,model__random_state,42
+Gradient Boosting,model__subsample,0.9
+Gradient Boosting,model__tol,0.0001
+Gradient Boosting,model__validation_fraction,0.1
+Gradient Boosting,model__verbose,0
+Gradient Boosting,model__warm_start,False
+Random Forest,memory,None
+Random Forest,steps,"[('preprocessor', ColumnTransformer(transformers=[('numerical',
+                                 Pipeline(steps=[('imputer',
+                                                  SimpleImputer(strategy='median')),
+                                                 ('scaler', StandardScaler())]),
+                                 ['total_sqft_clean', 'bhk', 'bath',
+                                  'balcony']),
+                                ('categorical',
+                                 Pipeline(steps=[('imputer',
+                                                  SimpleImputer(strategy='most_frequent')),
+                                                 ('encoder',
+                                                  OneHotEncoder(handle_unknown='infrequent_if_exist',
+                                                                min_frequency=5))]),
+                                 ['area_type', 'location'])])), ('model', RandomForestRegressor(max_features=0.8, min_samples_split=10, n_estimators=400,
+                      n_jobs=1, random_state=42))]"
+Random Forest,transform_input,None
+Random Forest,verbose,False
+Random Forest,preprocessor,"ColumnTransformer(transformers=[('numerical',
+                                 Pipeline(steps=[('imputer',
+                                                  SimpleImputer(strategy='median')),
+                                                 ('scaler', StandardScaler())]),
+                                 ['total_sqft_clean', 'bhk', 'bath',
+                                  'balcony']),
+                                ('categorical',
+                                 Pipeline(steps=[('imputer',
+                                                  SimpleImputer(strategy='most_frequent')),
+                                                 ('encoder',
+                                                  OneHotEncoder(handle_unknown='infrequent_if_exist',
+                                                                min_frequency=5))]),
+                                 ['area_type', 'location'])])"
+Random Forest,model,"RandomForestRegressor(max_features=0.8, min_samples_split=10, n_estimators=400,
+                      n_jobs=1, random_state=42)"
+Random Forest,preprocessor__force_int_remainder_cols,deprecated
+Random Forest,preprocessor__n_jobs,None
+Random Forest,preprocessor__remainder,drop
+Random Forest,preprocessor__sparse_threshold,0.3
+Random Forest,preprocessor__transformer_weights,None
+Random Forest,preprocessor__transformers,"[('numerical', Pipeline(steps=[('imputer', SimpleImputer(strategy='median')),
+                ('scaler', StandardScaler())]), ['total_sqft_clean', 'bhk', 'bath', 'balcony']), ('categorical', Pipeline(steps=[('imputer', SimpleImputer(strategy='most_frequent')),
+                ('encoder',
+                 OneHotEncoder(handle_unknown='infrequent_if_exist',
+                               min_frequency=5))]), ['area_type', 'location'])]"
+Random Forest,preprocessor__verbose,False
+Random Forest,preprocessor__verbose_feature_names_out,True
+Random Forest,preprocessor__numerical,"Pipeline(steps=[('imputer', SimpleImputer(strategy='median')),
+                ('scaler', StandardScaler())])"
+Random Forest,preprocessor__categorical,"Pipeline(steps=[('imputer', SimpleImputer(strategy='most_frequent')),
+                ('encoder',
+                 OneHotEncoder(handle_unknown='infrequent_if_exist',
+                               min_frequency=5))])"
+Random Forest,preprocessor__numerical__memory,None
+Random Forest,preprocessor__numerical__steps,"[('imputer', SimpleImputer(strategy='median')), ('scaler', StandardScaler())]"
+Random Forest,preprocessor__numerical__transform_input,None
+Random Forest,preprocessor__numerical__verbose,False
+Random Forest,preprocessor__numerical__imputer,SimpleImputer(strategy='median')
+Random Forest,preprocessor__numerical__scaler,StandardScaler()
+Random Forest,preprocessor__numerical__imputer__add_indicator,False
+Random Forest,preprocessor__numerical__imputer__copy,True
+Random Forest,preprocessor__numerical__imputer__fill_value,None
+Random Forest,preprocessor__numerical__imputer__keep_empty_features,False
+Random Forest,preprocessor__numerical__imputer__missing_values,nan
+Random Forest,preprocessor__numerical__imputer__strategy,median
+Random Forest,preprocessor__numerical__scaler__copy,True
+Random Forest,preprocessor__numerical__scaler__with_mean,True
+Random Forest,preprocessor__numerical__scaler__with_std,True
+Random Forest,preprocessor__categorical__memory,None
+Random Forest,preprocessor__categorical__steps,"[('imputer', SimpleImputer(strategy='most_frequent')), ('encoder', OneHotEncoder(handle_unknown='infrequent_if_exist', min_frequency=5))]"
+Random Forest,preprocessor__categorical__transform_input,None
+Random Forest,preprocessor__categorical__verbose,False
+Random Forest,preprocessor__categorical__imputer,SimpleImputer(strategy='most_frequent')
+Random Forest,preprocessor__categorical__encoder,"OneHotEncoder(handle_unknown='infrequent_if_exist', min_frequency=5)"
+Random Forest,preprocessor__categorical__imputer__add_indicator,False
+Random Forest,preprocessor__categorical__imputer__copy,True
+Random Forest,preprocessor__categorical__imputer__fill_value,None
+Random Forest,preprocessor__categorical__imputer__keep_empty_features,False
+Random Forest,preprocessor__categorical__imputer__missing_values,nan
+Random Forest,preprocessor__categorical__imputer__strategy,most_frequent
+Random Forest,preprocessor__categorical__encoder__categories,auto
+Random Forest,preprocessor__categorical__encoder__drop,None
+Random Forest,preprocessor__categorical__encoder__dtype,<class 'numpy.float64'>
+Random Forest,preprocessor__categorical__encoder__feature_name_combiner,concat
+Random Forest,preprocessor__categorical__encoder__handle_unknown,infrequent_if_exist
+Random Forest,preprocessor__categorical__encoder__max_categories,None
+Random Forest,preprocessor__categorical__encoder__min_frequency,5
+Random Forest,preprocessor__categorical__encoder__sparse_output,True
+Random Forest,model__bootstrap,True
+Random Forest,model__ccp_alpha,0.0
+Random Forest,model__criterion,squared_error
+Random Forest,model__max_depth,None
+Random Forest,model__max_features,0.8
+Random Forest,model__max_leaf_nodes,None
+Random Forest,model__max_samples,None
+Random Forest,model__min_impurity_decrease,0.0
+Random Forest,model__min_samples_leaf,1
+Random Forest,model__min_samples_split,10
+Random Forest,model__min_weight_fraction_leaf,0.0
+Random Forest,model__monotonic_cst,None
+Random Forest,model__n_estimators,400
+Random Forest,model__n_jobs,1
+Random Forest,model__oob_score,False
+Random Forest,model__random_state,42
+Random Forest,model__verbose,0
+Random Forest,model__warm_start,False

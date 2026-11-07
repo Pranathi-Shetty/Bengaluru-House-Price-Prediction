@@ -1,0 +1,6 @@
+Figure Number,Filename,Caption
+Figure 1,figure_01_actual_vs_predicted.png,Actual versus predicted house prices using the final Gradient Boosting model.
+Figure 2,figure_02_residual_analysis.png,Residuals versus predicted house prices for the final Gradient Boosting model.
+Figure 3,figure_03_prediction_error_distribution.png,"Distribution of prediction errors, showing the spread and direction of model errors."
+Figure 4,figure_04_top_20_feature_importance.png,Top 20 features influencing the predictions of the Gradient Boosting model.
+Figure 5,figure_05_grouped_feature_importance.png,"Relative importance of numerical features, location and area type."
